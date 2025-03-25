@@ -1,0 +1,30 @@
+constants:
+  keycloak-url: "https://keycloak.direa.synology.me"
+  realm: "sso"
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      default-filters:
+        - name: GlobalFilter
+          args:
+            baseMessage: Spring Cloud Gateway Global Filter
+            preLogger: true
+            postLogger: true
+      routes:
+        - id: bookmark
+          uri: lb://BOOKMARK
+          predicates:
+            - Path=/bookmarks/**
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${constants.keycloak-url}/realms/${constants.realm}
+          jwk-set-uri: ${constants.keycloak-url}/realms/${constants.realm}/protocol/openid-connect/certs
+
+server:
+  port: 8000
