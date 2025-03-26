@@ -32,7 +32,7 @@ management:
 
 my:
   custom:
-    value: 2h1
+    value: "33333333"
 
 server:
   port: 0
