@@ -32,7 +32,7 @@ management:
 
 my:
   custom:
-    value: "a"
+    value: "테스트"
 
 server:
   port: 0

@@ -18,8 +18,6 @@ spring:
           uri: lb://BOOKMARK
           predicates:
             - Path=/bookmarks/**
-          filters:
-            - RewritePath=/bookmarks/actuator/(?<remaining>.*), /actuator/${remaining}
 
   security:
     oauth2:
