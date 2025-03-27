@@ -17,7 +17,8 @@ spring:
         - id: bookmark
           uri: lb://BOOKMARK
           predicates:
-            - Path=/bookmarks/**
+            - Path=/bookmarks/**, /bookmarks/actuator/**
+            - Method=GET,POST,PUT,DELETE,OPTIONS
 
   security:
     oauth2:
