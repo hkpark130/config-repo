@@ -14,13 +14,14 @@ spring:
             preLogger: true
             postLogger: true
       routes:
-        - id: bookmark
-          uri: lb://BOOKMARK
+        - id: workspace
+          uri: lb://WORKSPACE
           predicates:
-            - Path=/bookmarks/**
+            - Path=/workspace/**
             - Method=GET,POST,PUT,DELETE,OPTIONS
           filters:
-            - RewritePath=/bookmarks/actuator/(?<remaining>.*), /actuator/${remaining}
+            - StripPrefix=1
+            - RewritePath=/actuator/(?<remaining>.*), /actuator/${remaining}
 
         - id: dashboard
           uri: lb://DASHBOARD
