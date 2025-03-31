@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bookmark
+  config:
+    activate:
+      on-profile: local
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+server:
+  port: 0
