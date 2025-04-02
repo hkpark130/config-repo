@@ -1,0 +1,14 @@
+openai:
+  api-key: sk-
+  endpoint: https://api.openai.com/v1/chat/completions
+
+spring:
+  application:
+    name: external
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+server:
+  port: 0

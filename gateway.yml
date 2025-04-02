@@ -30,6 +30,15 @@ spring:
             - Method=GET,POST,PUT,DELETE,OPTIONS
           filters:
             - RewritePath=/dashboard/actuator/(?<remaining>.*), /actuator/${remaining}
+
+        - id: external
+          uri: lb://EXTERNAL
+          predicates:
+            - Path=/external/**
+            - Method=GET,POST,PUT,DELETE,OPTIONS
+          filters:
+            - RewritePath=/external/actuator/(?<remaining>.*), /actuator/${remaining}
+
   security:
     oauth2:
       resourceserver:
