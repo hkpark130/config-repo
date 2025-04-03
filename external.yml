@@ -1,10 +1,13 @@
-openai:
-  api-key: sk-
-  endpoint: https://api.openai.com/v1/chat/completions
-
 spring:
   application:
     name: external
+  ai: 
+    openai: 
+      api-key: 
+      chat:
+        options:
+          model: gpt-4o
+          temperature: 0.7
 
 eureka:
   instance:
