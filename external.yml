@@ -1,9 +1,17 @@
+redmine:
+  base-url: https://issue.direa.synology.me
+  api-key: 2
+
+gitlab:
+  base-url: https://gitlab.direa.synology.me/api/v4
+  private-token: glpat-
+
 spring:
   application:
     name: external
   ai: 
     openai: 
-      api-key: 
+      api-key: sk-
       chat:
         options:
           model: gpt-4o
