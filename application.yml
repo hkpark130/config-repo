@@ -26,8 +26,8 @@ spring:
   rabbitmq:
     host: 192.168.3.8
     port: 5672
-    username: ENC(PiaJcw11MJfqB3SU5sdUoVinBFb5uIeZ05ZYLbbPZao8aGFklsNXXEOeKyxmnI/R)
-    password: ENC(PiaJcw11MJfqB3SU5sdUoVinBFb5uIeZ05ZYLbbPZao8aGFklsNXXEOeKyxmnI/R)
+    username: ENC(FGPoHtySzOqEdCEcEs+eL8wHG40n9Zeo/O5pBG3igqpc01w2O3Bk5myOVWN63hiC)
+    password: ENC(FGPoHtySzOqEdCEcEs+eL8wHG40n9Zeo/O5pBG3igqpc01w2O3Bk5myOVWN63hiC)
   cloud:
     bootstrap: 
       enabled: true
