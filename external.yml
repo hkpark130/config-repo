@@ -1,3 +1,7 @@
+go:
+  api:
+    service-key: ENC(DOPl0dwD4VDjf1LNJXcGeAdfj2TZcDTcjKUvu/7OkrJXbq3MkAl4Sck4mTbDdAwdulQVDJllvs6xFz1Hj3P6sQ6euefTKjWB//hdlGNVMNfP0v/FgiNxkjDRmswM+/Di4/UuDQLLDVB5+ONIE5mzjvO6javtFj/umQqSnkC9YXhm6IQkRPo6GcKEQIgzXhYb)
+
 redmine:
   base-url: https://issue.direa.synology.me
   api-key: ENC(2cFGW58W0+ifwa7eVENItzvhTbM5X8Q6sroQGcZidmZkroPnDXweZ7RB+wWZnzqqUUY2gsCwbiGAu4c9kS4y64FCJpq4huFb+pSjg5/1zdI=)
