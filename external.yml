@@ -1,21 +1,21 @@
 go:
   api:
-    service-key: ENC(DOPl0dwD4VDjf1LNJXcGeAdfj2TZcDTcjKUvu/7OkrJXbq3MkAl4Sck4mTbDdAwdulQVDJllvs6xFz1Hj3P6sQ6euefTKjWB//hdlGNVMNfP0v/FgiNxkjDRmswM+/Di4/UuDQLLDVB5+ONIE5mzjvO6javtFj/umQqSnkC9YXhm6IQkRPo6GcKEQIgzXhYb)
+    service-key: {ENC(DOPl0dwD4VDjf1LNJXcGeAdfj2TZcDTcjKUvu/7OkrJXbq3MkAl4Sck4mTbDdAwdulQVDJllvs6xFz1Hj3P6sQ6euefTKjWB//hdlGNVMNfP0v/FgiNxkjDRmswM+/Di4/UuDQLLDVB5+ONIE5mzjvO6javtFj/umQqSnkC9YXhm6IQkRPo6GcKEQIgzXhYb)}
 
 redmine:
   base-url: https://issue.direa.synology.me
-  api-key: ENC(2cFGW58W0+ifwa7eVENItzvhTbM5X8Q6sroQGcZidmZkroPnDXweZ7RB+wWZnzqqUUY2gsCwbiGAu4c9kS4y64FCJpq4huFb+pSjg5/1zdI=)
+  api-key: {ENC(2cFGW58W0+ifwa7eVENItzvhTbM5X8Q6sroQGcZidmZkroPnDXweZ7RB+wWZnzqqUUY2gsCwbiGAu4c9kS4y64FCJpq4huFb+pSjg5/1zdI=)}
 
 gitlab:
   base-url: https://gitlab.direa.synology.me/api/v4
-  private-token: ENC(2b4Oiva//GqGolFFw2J9kn1aKYDAfjlBsX6/kzaM/Pe1YfM+Pqkw2iyS7YnnicTRnEQCb2D8tMTNMfLZFI/ueg==)
+  private-token: {ENC(2b4Oiva//GqGolFFw2J9kn1aKYDAfjlBsX6/kzaM/Pe1YfM+Pqkw2iyS7YnnicTRnEQCb2D8tMTNMfLZFI/ueg==)}
 
 spring:
   application:
     name: external
   ai: 
     openai: 
-      api-key: ENC(imnxTPo3PSLMv9xw7zk8WBeRcee/Xebty9PBuzvkhuOXueyShccSEeRFZl8vi4sSm6bna7+aM8GNrErGu1g/fqQndBchXts+WQern2cE3s+7+WRhh4jTy0EsRJw5k9Qmss+QZDOK9TA3mDODVllZAml91Ij63RB44FLIUA46tCg=)
+      api-key: {ENC(imnxTPo3PSLMv9xw7zk8WBeRcee/Xebty9PBuzvkhuOXueyShccSEeRFZl8vi4sSm6bna7+aM8GNrErGu1g/fqQndBchXts+WQern2cE3s+7+WRhh4jTy0EsRJw5k9Qmss+QZDOK9TA3mDODVllZAml91Ij63RB44FLIUA46tCg=)}
       chat:
         options:
           model: gpt-4o
