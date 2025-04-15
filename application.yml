@@ -7,7 +7,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://eureka:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 spring:
   datasource:
@@ -27,7 +27,7 @@ spring:
     host: 192.168.3.8
     port: 5672
     username: admin
-    password: {ENC(FGPoHtySzOqEdCEcEs+eL8wHG40n9Zeo/O5pBG3igqpc01w2O3Bk5myOVWN63hiC)}
+    password: ENC(FGPoHtySzOqEdCEcEs+eL8wHG40n9Zeo/O5pBG3igqpc01w2O3Bk5myOVWN63hiC)
     
   cloud:
     bootstrap: 
