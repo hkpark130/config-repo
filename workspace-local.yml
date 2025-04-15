@@ -3,7 +3,7 @@ keycloak:
   realm: sso
   admin-client:
     client-id: chrome-api
-    client-secret: 9
+    client-secret: ENC(5SVC0nJIU7Adk7alP2Jd/XTq/f9Hexma1/5R1eu28M5fVF6B9h1Khk0nXMZqWbDhpoFxLoMKQDQAq3VXyDpl5cdEyjEOItRxCW3eFLgZdTQ=)
 
 spring:
   application:
@@ -11,7 +11,7 @@ spring:
   config:
     activate:
       on-profile: local
-
+      
   jpa: 
     defer-datasource-initialization: true
   sql: 

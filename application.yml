@@ -1,3 +1,7 @@
+jasypt:
+  encryptor:
+    password: ${JASYPT_KEY}
+
 eureka:
   client:
     fetch-registry: true
@@ -22,8 +26,8 @@ spring:
   rabbitmq:
     host: 192.168.3.8
     port: 5672
-    username: admin
-    password: admin
+    username: ENC(PiaJcw11MJfqB3SU5sdUoVinBFb5uIeZ05ZYLbbPZao8aGFklsNXXEOeKyxmnI/R)
+    password: ENC(PiaJcw11MJfqB3SU5sdUoVinBFb5uIeZ05ZYLbbPZao8aGFklsNXXEOeKyxmnI/R)
   cloud:
     bootstrap: 
       enabled: true
