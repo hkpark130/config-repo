@@ -1,7 +1,3 @@
-jasypt:
-  encryptor:
-    password: ${JASYPT_KEY}
-
 eureka:
   client:
     fetch-registry: true
